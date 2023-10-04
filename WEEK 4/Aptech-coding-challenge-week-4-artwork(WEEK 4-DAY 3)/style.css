@@ -53,5 +53,7 @@
 @media only screen and (min-width : 1280px){
     .grid1{
         margin: 50px auto;
+        height: 500px;
+        width: 600px;
     }
 }
