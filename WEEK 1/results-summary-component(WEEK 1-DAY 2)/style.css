@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+  background-color: hsl(241, 100%, 89%);
+}
+section {
+  width: 100%;
+}
+.result {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+}
+.result_title,
+.summary_title {
+  font-size: 20px;
+}
+.result_title {
+  font-weight: 500;
+  padding: 20px 0;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.circle {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  position: relative;
+}
+.circle h2 {
+  font-size: 50px;
+  font-weight: 800;
+  color: hsla(0, 0%, 100%, 1);
+  position: relative;
+  top: 22.5px;
+}
+.circle p {
+  font-size: 15px;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.4);
+  position: relative;
+  top: 22.5px;
+}
+h3 {
+  margin: 20px 0 10px;
+  font-size: 25px;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 1);
+}
+.result p {
+  font-size: 17.5px;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.7);
+  margin-bottom: 30px;
+}
+.summary {
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  top: -20px;
+  z-index: -1;
+}
+.summary_title {
+  padding: 20px 0;
+  font-weight: 700;
+}
+.summary_category {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px 0 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.image_box,
+.digits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.digits span {
+  font-weight: 800;
+}
+.reaction {
+  background-color: hsla(0, 100%, 80%, 0.1);
+}
+.reaction_icon {
+  color: hsl(0, 100%, 67%);
+}
+.memory {
+  background-color: hsla(39, 100%, 70%, 0.1);
+}
+.memory_icon {
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsla(166, 100%, 85%, 0.1);
+}
+.verbal_icon {
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: hsla(234, 85%, 75%, 0.1);
+}
+.visual_icon {
+  color: hsl(234, 85%, 45%);
+}
+button {
+  width: 100%;
+  margin: 5px auto 0;
+  padding: 15px 0;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+/* Mobile device */
+@media only screen and (min-width: 375px) {
+  .result_title,
+  .summary_title {
+    font-size: 22.5px;
+  }
+  .circle {
+    height: 160px;
+    width: 160px;
+    margin: 10px auto;
+  }
+  .circle h2 {
+    font-size: 65px;
+  }
+  .circle p {
+    left: 18px;
+    font-size: 18px;
+  }
+  .result p {
+    width: 75%;
+  }
+}
+
+/* Tablet device */
+@media only screen and (min-width: 768px) {
+  section {
+    width: 60%;
+    margin: 0 20%;
+  }
+  .result_title,
+  .summary_title {
+    font-size: 27.5px;
+  }
+  .circle {
+    height: 165px;
+    width: 165px;
+  }
+  .circle h2 {
+    font-size: 75px;
+  }
+  .circle p {
+    left: 20px;
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 34px;
+  }
+  .result p {
+    font-size: 21.5px;
+    width: 75%;
+  }
+  .summary_category {
+    height: 80px;
+    padding: 0 22.5px 0 17.5px;
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+  button {
+    font-size: 25px;
+  }
+}
+
+/* Desktop device */
+@media only screen and (min-width: 1280px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  section {
+    width: 30%;
+    margin: 60px 0 0;
+  }
+  .summary {
+    top: 0;
+    padding-left: 50px;
+    right: 30px;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 5px 5px 15px 5px hsla(0, 0%, 0%, .1);
+  }
+  .result {
+    border-radius: 30px;
+  }
+  .summary_title {
+    padding: 15px 0;
+  }
+  .summary_category {
+    height: 60px;
+    font-size: 18px;
+  }
+  button {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+}
