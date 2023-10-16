@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 20px;
+    row-gap: 30px;
+}
+.grid-item{
+    border-radius: 5px;
+    padding: 25px;
+}
+.user-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 12.5px;
+}
+.profile-pic{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 17.5px;
+    font-weight: 600;
+}
+.verification{
+    font-size: 16px;
+    font-weight: 500;
+}
+.top{
+    font-size: 22.5px;
+    font-weight: 600;
+    margin: 17.5px 0;
+}
+.bottom{
+    font-size: 16px;
+    font-weight: 500;
+}
+.grid-item:not(:nth-child(3), :nth-child(5)) .name, .grid-item:not(:nth-child(3), :nth-child(5)) .top{
+    color: hsl(0, 0%, 81%);
+}
+.grid-item:nth-child(3) .name, .grid-item:nth-child(3) .top{
+    color: hsl(217, 19%, 35%);
+}
+.grid-item:nth-child(5) .name, .grid-item:nth-child(5) .top{
+    color: hsl(219, 29%, 14%);
+}
+.grid-item:nth-child(1){
+    background: url('./images/bg-pattern-quotation.svg'), hsl(263, 55%, 52%);
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+}
+.grid-item:nth-child(1) .profile-pic{
+    border: 2px solid hsla(274, 93%, 88%, 0.26);
+}
+.grid-item:nth-child(1) .verification, .grid-item:nth-child(1) .bottom{
+    color: hsla(274, 93%, 88%, 0.26);
+}
+.grid-item:nth-child(2){
+    background-color: hsl(217, 19%, 35%);
+}
+.grid-item:nth-child(2) .profile-pic{
+    border: 2px solid hsla(216, 100%, 91%, 0.175);
+}
+.grid-item:nth-child(2) .verification, .grid-item:nth-child(2) .bottom{
+    color: hsla(216, 100%, 91%, 0.175);
+}
+.grid-item:nth-child(3){
+    background-color: hsl(0, 0%, 100%);
+}
+.grid-item:nth-child(3) .profile-pic{
+    border: none;
+}
+.grid-item:nth-child(3) .verification, .grid-item:nth-child(3) .bottom{
+    color: hsl(217, 19%, 35%);
+}
+.grid-item:nth-child(4){
+    background-color: hsl(219, 29%, 14%);
+}
+.grid-item:nth-child(4) .profile-pic{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+.grid-item:nth-child(4) .verification, .grid-item:nth-child(4) .bottom{
+    color: hsla(216, 93%, 94%, 0.197);
+}
+.grid-item:nth-child(5){
+    background-color: hsl(0, 0%, 100%);
+}
+.grid-item:nth-child(5) .profile-pic{
+    border: none;
+}
+.grid-item:nth-child(5) .verification, .grid-item:nth-child(5) .bottom{
+    color: hsl(0, 0%, 81%);
+}
+
+/* TABLET VIEW */
+@media only screen and (min-width : 768px){
+    .grid-container{
+        margin: 50px 30px;
+    }
+    .grid-item{
+        border-radius: 10px;
+        padding: 35px;
+    }
+    .user-detail{
+        column-gap: 12.5px;
+    }
+    .profile-pic{
+        height: 55px;
+        width: 55px;
+    }
+    .name{
+        font-size: 22.5px;
+    }
+    .verification{
+        font-size: 21px;
+    }
+    .top{
+        font-size: 27.5px;
+        margin: 22.5px 0;
+    }
+    .bottom{
+        font-size: 21px;
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width : 1280px){
+    .grid-container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    .grid-item{
+        border-radius: 5px;
+        padding: 25px;
+    }
+    .user-detail{
+        column-gap: 12.5px;
+    }
+    .profile-pic{
+        height: 45px;
+        width: 45px;
+    }
+    .name{
+        font-size: 17.5px;
+    }
+    .verification{
+        font-size: 17px;
+    }
+    .top{
+        font-size: 22.5px;
+        margin: 17.5px 0;
+    }
+    .bottom{
+        font-size: 16px;
+    }
+    .grid-item:nth-child(1){
+        grid-column: 1 / span 2;
+    }
+    .grid-item:nth-child(4){
+        grid-column: 2 / span 2;
+    }
+    .grid-item:nth-child(3){
+        grid-column: 1;
+    }
+    .grid-item:nth-child(5){
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+}
