@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+main{
+    margin: 50px 20px;
+}
+.commuinity, .subscription, .why-us{
+    padding: 20px;
+}
+.commuinity{
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 10px 10px 0 0;
+}
+.commuinity .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+.commuinity .guarantee{
+    font-size: 17.5px;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    padding: 22.5px 0 20px;
+}
+.commuinity .our-offering{
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+    line-height: 22.5px;
+}
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+}
+.subscription .title, .why-us .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+}
+.subscription .payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+.subscription .amount{
+    font-size: 35px;
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+    padding: 15px 0 5px;
+}
+.subscription .schedule, .subscription .access-detail{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(204, 43%, 93%);
+}
+.subscription .access-detail{
+    padding-bottom: 20px;
+}
+.subscription button{
+    width: 100%;
+    font-size: 17.5px;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+.why-us{
+    background-color: hsla(179, 62%, 43%, .7);
+    border-radius: 0 0 10px 10px;
+}
+.why-us .title{
+    padding-bottom: 20px;
+}
+.why-us .unique-selling-point{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsla(203, 44%, 93%, 0.561);
+    line-height: 25px;
+}
+
+/* MOBILE VIEW */
+@media only screen and (min-width : 375px){
+    main{
+        margin: 50px 20px;
+    }
+    .commuinity .title{
+        font-size: 22.5px;
+    }
+    .subscription .title, .why-us .title{
+        font-size: 22.5px;
+    }
+    .subscription .amount{
+        font-size: 37.5px;
+    }
+    .subscription .schedule, .subscription .access-detail{
+        font-size: 18.5px;
+    }
+    .subscription button{
+        padding: 15px 0;
+    }
+}
+
+/* TABLET VIEW */
+@media only screen and (min-width : 768px){
+    main{
+        margin: 50px auto;
+        width: 500px;
+    }
+    .commuinity, .subscription, .why-us{
+        padding: 30px;
+    }
+    .commuinity .title{
+        font-size: 32.5px;
+    }
+    .commuinity .guarantee{
+        font-size: 27.5px;
+    }
+    .commuinity .our-offering{
+        font-size: 22.5px;
+        line-height: 35px;
+    }
+    .subscription .title, .why-us .title{
+        font-size: 32.5px;
+    }
+    .subscription .amount{
+        font-size: 47.5px;
+    }
+    .subscription .schedule, .subscription .access-detail{
+        font-size: 23.5px;
+    }
+    .subscription button{
+        font-size: 22.5px;
+        padding: 15px 0;
+    }
+    .why-us .unique-selling-point{
+        font-size: 21px;
+        line-height: 30px;
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width : 1280px){
+    main{
+        margin: 50px auto;
+        width: 1000px;
+    }
+    .commuinity, .subscription, .why-us{
+        padding: 50px;
+    }
+    .commuinity .title{
+        font-size: 32.5px;
+    }
+    .commuinity .guarantee{
+        font-size: 27.5px;
+    }
+    .commuinity .our-offering{
+        font-size: 22.5px;
+    }
+    .subscription-why-us{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .subscription{
+        border-radius: 0 0 0 10px;
+    }
+    .subscription .title, .why-us .title{
+        font-size: 32.5px;
+    }
+    .subscription .payment{
+        column-gap: 15px;
+    }
+    .subscription .amount{
+        font-size: 47.5px;
+        padding: 20px 0 10px;
+    }
+    .subscription .schedule, .subscription .access-detail{
+        font-size: 23.5px;
+    }
+    .subscription .access-detail{
+        padding-bottom: 35px;
+    }
+    .subscription button{
+        font-size: 25px;
+        padding: 25px 0;
+    }
+    .why-us{
+        border-radius: 0 0 10px 0;
+    }
+    .why-us .unique-selling-point{
+        font-size: 22.5px;
+        line-height: 30px;
+    }
+}
