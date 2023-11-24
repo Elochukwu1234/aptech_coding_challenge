@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body{
+    background-image: url("./images/bg-simplify-section-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header, section:not(.third), footer{
+    padding: 0 30px;
+}
+.third{
+    padding: 0 5px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center; 
+}
+.navlinks ul, .get-started-1{
+    display: none;
+}
+.logo{
+    height: 17.5px;
+    margin: 10px 0 20px;
+}
+.hamburger{
+    height: 15px;
+    width: 15px;
+    margin: 10px 0 20px;
+}
+.first .left h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(228, 39%, 23%);
+    margin-bottom: 20px;
+}
+.first .left p{
+    font-size: 12.5px;
+    font-weight: 400;
+    color: hsl(227, 12%, 61%);
+    margin-bottom: 20px;
+}
+.first .left .get-started-2{
+    font-size: 12.5px;
+    font-weight: 400;
+    background-color: hsl(12, 88%, 59%);
+    color: hsl(0, 0%, 98%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 5px 3px 3px hsl(13, 100%, 95%);
+    margin-bottom: 30px;
+}
+.first .right .illustration{
+    margin-left: 0;
+    width: 280px;
+    margin-bottom: 30px;
+}
+.second .left h2{
+    font-size: 22.5px;
+    font-weight: 500;
+    color: hsl(228, 39%, 23%);
+    margin-bottom: 20px;
+}
+.second .left p{
+    font-size: 12.5px;
+    font-weight: 400;
+    color: hsl(227, 12%, 61%);
+    margin-bottom: 20px;
+}
+.second .right .serial-no-title-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 10px;
+}
+.second .right .serial-no{
+    font-size: 8px;
+    font-weight: 400;
+    border: none;
+    border-radius: 7.5px;
+    padding: 2.5px 7.5px;
+    background-color: hsl(12, 88%, 59%);
+    color: hsl(0, 0%, 98%);
+}
+.second .right h3{
+    font-size: 12.5px;
+    font-weight: 700;
+    color:  hsl(228, 39%, 23%);
+    margin-bottom: 7.5px;
+}
+.second .right .content{
+    font-size: 12.5px;
+    font-weight: 400;
+    color: hsl(227, 12%, 61%);
+    margin-bottom: 20px;
+}
+.third h2{
+    text-align: center;
+    font-size: 22.5px;
+    font-weight: 500;
+    color: hsl(228, 39%, 23%);
+    margin: 30px 0 40px;
+}
+.third .user-review-flexbox{
+    display: flex;
+    flex-direction: column;
+}
+.third .user-review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.third .review{
+    text-align: center;
+}
+.third .user-review .user-img{
+    height: 70px;
+    margin-bottom: 10px;
+}
+.third .user-review .user-name{
+    font-size: 12.5px;
+    font-weight: 700;
+    color: hsl(241, 72%, 52%);
+    margin-bottom: 10px;
+}
+.third .user-review .review{
+    font-size: 12.5px;
+    font-weight: 400;
+    color: hsl(227, 12%, 61%);
+    margin-bottom: 30px;
+}
+.third .get-started-3{
+    font-size: 12.5px;
+    font-weight: 400;
+    background-color: hsl(12, 88%, 59%);
+    color: hsl(0, 0%, 98%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 5px 3px 3px hsl(13, 100%, 95%);
+    margin-bottom: 30px;
+    transform: translateX(125%);
+}
+.fourth{
+    background-color: hsl(12, 88%, 59%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.fourth h2{
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(0, 0%, 98%);
+    margin: 25px 0;
+}
+.fourth .get-started-4{
+    font-size: 10px;
+    font-weight: 700;
+    background-color:hsl(0, 0%, 98%);
+    color: hsl(12, 88%, 59%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+footer{
+    background-color: hsl(233, 12%, 13%);
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+footer .social-links{
+    color: hsl(0, 0%, 98%);
+    font-size: 17.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 7.5px;
+    margin-bottom: 20px;
+}
+footer .some-navlinks, .other-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .some-navlinks a, .other-links a{
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: hsl(0, 0%, 98%);
+    margin-block: 5px;
+}
+footer .inbox-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 50px;
+}
+footer .inbox, .go{
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+footer .inbox{
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+}
+footer .inbox::placeholder{
+    font-size: 12.5px;
+    font-weight: 400;
+    color: hsl(227, 12%, 61%);
+}
+footer .go{
+    background-color: hsl(12, 88%, 59%);
+    color:hsl(0, 0%, 98%);
+    border: none;
+    font-size: 12.5px;
+    font-weight: 400;
+}
+footer .copyright{
+    color:hsl(0, 0%, 98%);
+    font-size: 12.5px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* MOBILE VIEW */
+@media only screen and (min-width : 375px){
+    header, section:not(.third), footer{
+        padding: 0 30px;
+    }
+    .third{
+        padding: 0 5px;
+    }
+    .logo{
+        height: 20px;
+    }
+    .first .left h1{
+        font-size: 27.5px;
+        margin-bottom: 20px;
+    }
+    .first .left p{
+        font-size: 15px;
+        margin-bottom: 22.5px;
+    }
+    .first .left .get-started-2{
+        font-size: 13.5px;
+        padding: 5px 10px;
+        margin-bottom: 30px;
+    }
+    .first .right .illustration{
+        margin-left: 0;
+        width: 335px;
+        margin-bottom: 30px;
+    }
+    .second .left h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .second .left p{
+        font-size: 15px; /*2.5px*/
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .second .right .serial-no{
+        font-size: 9px;
+        padding: 3.5px 8.5px;
+    }
+    .second .right h3{
+        font-size: 15px;
+    }
+    .second .right .content{
+        font-size: 13.5px; 
+    }
+    .third h2{
+        font-size: 25px; 
+    }
+    .third .user-review .user-name{
+        font-size: 13.5px; 
+    }
+    .third .user-review .review{
+        font-size: 13.5px; 
+    }
+    .third .get-started-3{
+        font-size: 13.5px;
+        transform: translateX(135%);
+    }
+    .fourth h2{
+        margin: 35px 0;
+    }
+    .fourth .get-started-4{
+        font-size: 11px; 
+    }
+    footer{
+        padding-top: 30px; 
+        padding-bottom: 30px;
+    }
+    footer .social-links{
+        font-size: 18.5px; 
+    } 
+    footer .some-navlinks a, .other-links a{
+        font-size: 13.5px;
+    }
+    footer .inbox::placeholder{
+        font-size: 13.5px; /*1px*/
+    }
+    footer .go{
+        font-size: 13.5px; /*1px*/
+    }
+    footer .copyright{
+        font-size: 13.5px; 
+    }
+}
+
+/* MOBILE VIEW 2 */
+@media only screen and (min-width : 428px){
+    .first .right .illustration{
+        margin-left: 0;
+        width: 385px; 
+        margin-bottom: 30px;
+    }
+    .third .get-started-3{
+        font-size: 13.5px; 
+        transform: translateX(155%); 
+    }
+    .fourth h2{
+        font-size: 17.5px; 
+        margin: 35px 0; 
+    }
+}
+
+/* TABLET VIEW */
+@media only screen and (min-width : 768px){
+    body{
+        background-image: url("./images/bg-tablet-pattern.svg");
+    }
+    header, section:not(.third), footer{
+        padding: 30px 50px;
+    }
+    .third{
+        padding: 0 20px;
+    }
+    .logo{
+        height: 30px;
+        margin: 10px 0 0;
+    }
+    .hamburger{
+        height: 20px;
+        width: 25px;
+        margin: 10px 0 0;
+    }
+    .first .left h1{
+        font-size: 32.5px;
+        margin-bottom: 20px;
+    }
+    .first .left p{
+        font-size: 18.5px;
+        margin-bottom: 22.5px;
+    }
+    .first .left .get-started-2{
+        font-size: 16.5px;
+        padding: 7.5px 12.5px;
+        margin-bottom: 30px;
+    }
+    .first .right .illustration{
+        margin-left: 0;
+        width: 715px;
+        margin-bottom: 0;
+    }
+    .second .left h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .second .left p{
+        font-size: 18.5px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    .second .right .serial-no-title-content{
+        column-gap: 20px;
+    }
+    .second .right .serial-no{
+        font-size: 14px;
+        padding: 4.5px 9.5px 3px;
+        border-radius: 20px;
+    }
+    .second .right h3{
+        font-size: 18.5px;
+        margin-bottom: 10px;
+    }
+    .second .right .content{
+        font-size: 16.5px;
+    }
+    .third h2{
+        font-size: 30px;
+    }
+    .third .user-review .user-img{
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .third .user-review .user-name{
+        font-size: 19.5px;
+        margin-bottom: 20px;
+    }
+    .third .user-review .review{
+        font-size: 17.5px;
+        margin-bottom: 50px;
+    }
+    .third .get-started-3{
+        font-size: 16.5px;
+        padding: 7.5px 12.5px;
+        transform: translateX(255%);
+    }
+    .fourth h2{
+        font-size: 27.5px;
+        margin: 35px 0;
+    }
+    .fourth .get-started-4{
+        font-size: 17.5px;
+        padding: 7.5px 12.5px;
+    }
+    footer{
+        padding-top: 30px; 
+        padding-bottom: 30px;
+    }
+    footer .social-links{
+        font-size: 25.5px;
+        column-gap: 10px;
+        margin: 20px 0;
+    }
+    footer .some-navlinks a, .other-links a{
+        font-size: 16.5px;
+    }
+    footer .inbox-button{
+        column-gap: 12.5px;
+    }
+    footer .inbox, .go{
+        padding: 10px 15px;
+    }
+    footer .inbox{
+        width: 275px;
+    }
+    footer .inbox::placeholder{
+        font-size: 17.5px;
+    }
+    footer .go{
+        font-size: 17.5px;
+        border-radius: 40px;
+    }
+    footer .copyright{
+        font-size: 17.5px;
+    }
+}
+
+/* TABLET VIEW 2 */
+@media only screen and (min-width : 834px){
+    .first .right .illustration{
+        width: 800px;
+    }
+    .third .get-started-3{
+        transform: translateX(280%);
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width : 1280px){
+    body{
+        background-image: url("./images/bg-simplify-section-desktop.svg");
+    }
+    header, section:not(.third), footer{
+        padding: 0 120px;
+    }
+    .third{
+        padding: 0 30px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+    }
+    .logo, .navlinks, .get-started-1{
+        margin: 30px 0 50px;
+    }
+    .logo{
+        height: 25px;
+    }
+    .navlinks ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .navlinks ul a{
+        text-decoration: none;
+        font-size: 17.5px;
+        font-weight: 400;
+        color:  hsl(228, 39%, 23%);
+    }
+    .get-started-1{
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: hsl(12, 88%, 59%);
+        color: hsl(0, 0%, 98%);
+        padding: 7.5px 12.5px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 2px 5px 3px 3px hsl(13, 100%, 95%);
+    }
+    .hamburger{
+        display: none;
+    }
+    .first{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 100px;
+        margin-bottom: 50px;
+    }
+    .first .left h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .first .left p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .first .left .get-started-2{
+        font-size: 15px;
+        padding: 7.5px 12.5px;
+        box-shadow: 2px 5px 3px 3px hsl(13, 100%, 95%);
+    }
+    .first .right .illustration{
+        margin-left: 0;
+        width: 500px;
+    }
+    .second{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 100px;
+        margin-bottom: 50px;
+    }
+    .second .left h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .second .left p{
+        font-size: 15px;
+    }
+    .second .right .serial-no-title-content{
+        column-gap: 20px;
+    }
+    .second .right .serial-no{
+        font-size: 12.5px;
+        padding: 5px 12.5px;
+    }
+    .second .right h3{
+        font-size: 20px;
+        margin-bottom: 7.5px;
+    }
+    .second .right .content{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .third .user-review-flexbox{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+    }
+    .third h2{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .third .user-review{
+        flex-direction: column;
+        align-items: center;
+    }
+    .third .user-review .user-img{
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    .third .user-review .user-name{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .third .user-review .review{
+        font-size: 15px;
+        margin-bottom: 60px;
+    }
+    .third .get-started-3{
+        font-size: 15px;
+        padding: 7.5px 12.5px;
+        transform: translateX(480%);
+        margin-bottom: 120px;
+    }
+    .fourth h2{
+        font-size: 30px;
+        margin: 50px 0;
+    }
+    .fourth .get-started-4{
+        font-size: 15px;
+        padding: 7.5px 12.5px;
+    }
+    footer{
+        background-color: hsl(233, 12%, 13%);
+        padding-top: 30px; 
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    footer .logo{
+        height: 30px;
+        margin: 0 0 30px;
+    }
+    footer .social-links{
+        font-size: 22.5px;
+        column-gap: 15px;
+        margin-bottom: 0;
+    }
+    footer .some-navlinks a, .other-links a, footer .inbox::placeholder, footer .go{
+        font-size: 15px;
+    }
+    footer .inbox, .go{
+        padding: 10px 15px;
+    }
+    footer .copyright{
+        text-align: right;
+    }
+}
